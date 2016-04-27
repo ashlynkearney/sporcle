@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<!--
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+-->
+
+<html>
+<head>
+<!-- a. -->
+<link rel="stylesheet" href="css/main.css">
+<title>Sporclone: Name the following albums </title>
+
+<!-- b. -->
+
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+}
+tr {
+}
+th {
+}
+td {
+}
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+// c.
+var answers = ["Drake", "Taylor Swift", "Lil Wayne", "Lady Gaga", "Kanye West", " Rihanna", "Jay Z", "Nicki Minaj|Nikki Minaj|Nickie Minaj|Nicky Minaj|Nicki Manaj|Nikki Manaj|Nickie Manaj|Nickey Manaj", "Maroon 5|Adam Levine", "Gucci Mane" , "Justin Bieber|Jb" , "Wiz Khalifa"];
+// d.
+var time_limit = 65; // in seconds
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="file:///H:/WebPageDesign1/Topmovies/topmovies.html">Top Movies</a></li>
+            <li><a href="file:///H:/WebPageDesign1/sporclone/celebname.html">Richest Rappers 2015</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/music.jpg" alt="quiz logo">
+
+        <!-- h. -->
+        <h2>Enter the artist of each album:</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter artist:</h3>
+
+            <!-- k.  -->
+            <body onkeyup="check()">
+            <input id="guess" type="text">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><img src="img/drake.jpg"><br><span id="answer0"></span></td>
+        <td><img src="img/tayswift.png"><br><span id="answer1"></span></td>
+        <td><img src="img/lilwayne1.jpg"><br><span id="answer2"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/ladygaga.jpg"><br><span id="answer3"></span></td>
+        <td><img src="img/kayne1.jpg"><br><span id="answer4"></span></td>
+        <td><img src="img/rihanna.jpg"><br><span id="answer5"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/jayz.jpg"><br><span id="answer6"></span></td>
+        <td><img src="img/nickiminaj.jpg"><br><span id="answer7"></span></td>
+        <td><img src="img/maroon5.jpg"><br><span id="answer8"></span></td>
+        </tr>
+        <tr>
+        <td><img src="img/gucci.jpg"><br><span id="answer9"></span></td>
+        <td><img src="img/jb.jpg"><br><span id="answer10"></span></td>
+        <td><img src="img/wiz.jpg"><br><span id="answer11"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by AshlynK.</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
